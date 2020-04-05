@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get A Gift Card Today !</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+	function date(){
+		var currentDate = new Date(new Date().getTime()+1 * 60 * 60 *500);
+		var day = currentDate.getDate()
+		var month = currentDate.getMonth()
+		var year = currentDate.getFullYear()
+		var montharray = new Array();
+		montharray[0] = "January";
+		montharray[1] = "February";
+		montharray[2] = "March";
+		montharray[3] = "April";
+		montharray[4] = "May";
+		montharray[5] = "June";
+		montharray[6] = "July";
+		montharray[7] = "August";
+		montharray[8] = "September";
+		montharray[9] = "October";
+		montharray[10] = "November";
+		montharray[11] = "December";
+		document.write(day + " " + montharray[month] + " " + year)
+	}
+</script>
+</head>
+
+
+<body>
+
+	<img src="img/Walmart-Logo-PNG-Transparent.png" class="giftcard img-responsive">
+
+         <div class="prize-date">
+				<p><span><strong>Published on </strong><script>date();</script></span></p>	
+		 </div>
+
+
+         <div class="header">
+         	<h2>You could be selected for a chance to WIN <span class="color">Walmart</span> Gift Cards worth $500!</h2>
+         </div>
+
+			<div class="intro">
+				If you want to participate in the survey, begin with answering the questions below. Unless... you decide to give up your opportunity for a chance to buy all the goodies you want!
+		   </div>
+
+
+	     <div class="quiz-container">
+
+		<div class="question-number">
+			<h3>Question <span class="question-num-value"></span> of <span class="total-question"></span></h3>	
+
+		</div>
+
+		<div class="question">
+			
+		</div>
+
+		<div class="options">
+
+			<div id="0" class="option1"  onclick="check(this)"></div>
+			<div id="1" class="option2"  onclick="check(this)"></div>
+			<div id="2" class="option3"  onclick="check(this)"></div>
+			<div id="3" class="option4"  onclick="check(this)"></div>
+		
+		</div>
+
+
+		<div class="button">
+
+			<button type="button" class="btn" onclick="next()">Next</button>
+			 
+		</div>
+
+		<div class="answers-tracker">
+			
+			
+		</div> 
+	</div>
+   
+
+  <!-- Testimonial Start-->
+
+  <div class="main-content">
+		<hr>
+		<div class="comments">
+			<p style="margin:0;padding: 0;float: left; display: block; width: 50%;">
+				<span style="color:#3b5998;">Previous winners</span></p>
+				<div style="clear:both;"></div>
+		</div>
+		
+          <div class="comments" id="comment6" style="display: block;">
+          	<div class="profile"><img src="img/dummy-man-570x570.png"></div>
+          	<div class="comment-content">
+          		<p class="name">Barbara B</p>
+          		<p>Can't Believe it. Estactic.</p>
+          	</div>
+          	<div class="clr"></div>
+          </div>
+
+         
+         <div class="comments" id="comment5" style="display: block;">
+          	<div class="profile"><img src="img/dummy-man-570x570.png"></div>
+          	<div class="comment-content">
+          		<p class="name">Christine K</p>
+          		<p>Great! I'm over the moon.</p>
+          	</div>
+          	<div class="clr"></div>
+          </div>
+
+
+
+         <div class="comments" id="comment4" style="display: block;">
+          	<div class="profile"><img src="img/dummy-man-570x570.png"></div>
+          	<div class="comment-content">
+          		<p class="name">Amber Hoinville</p>
+          		<p>Brilliant, I can't believe it!</p>
+          	</div>
+          	<div class="clr"></div>
+          </div>
+
+
+
+         <div class="comments" id="comment3" style="display: block;">
+          	<div class="profile"><img src="img/dummy-man-570x570.png"></div>
+          	<div class="comment-content">
+          		<p class="name">Xavier Shiels</p>
+          		<p>Great!</p>
+          	</div>
+          	<div class="clr"></div>
+          </div>
+		
+</div>
+
+  <!-- Testimonial End-->
+
+	<div class="quiz-over">
+		<div class="box">
+
+		<h1>
+			Checking your answers...
+		</h1>
+		
+		  <p> No double registrations found.</p>
+		  <p> Gift cards available.</p>
+	      <p> You have a chance to win a $150 gift card!</p>
+
+	    </div>
+
+	</div>
+
+
+ <script src="script.js"></script>
+
+</body>
+</html>
